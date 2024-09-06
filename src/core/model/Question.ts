@@ -1,4 +1,4 @@
-import { Alternative } from "./Alternative";
+import { Alternative } from "@/core/model/Alternative";
 
 export interface Question {
     id: string;
