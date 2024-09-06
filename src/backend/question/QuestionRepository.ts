@@ -58,9 +58,9 @@ export default class QuestionRepository {
         include: {alternatives: true},
         where: {id},
       })
-      return question
+      return question as Question
     }
-    static async deleteQuestion(id: string): Promise<void>{
+    static async delete(id: string): Promise<void>{
       await this.db.question.delete({
         include:{alternatives: true},
         where: {id},
